@@ -8,7 +8,7 @@ This project use [Compass](http://compass-style.org/) to preprocess CSS and [bow
 
 To compile the CSS and install the dependencies, run the following commands.
 
-```bash
+```
 bower install
 compass compile
 ```
