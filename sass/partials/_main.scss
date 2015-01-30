@@ -1,0 +1,71 @@
+.admin-panel {
+    .panel-description {
+        @extend blockquote;
+        border-left-color: $medium;
+    }
+    .admin-controls {
+        background: #9CA5AF;
+        padding: 20px;
+        margin-bottom: 20px;
+        .actions-label {
+            color: white;
+            padding-right: 20px;
+            font-size: 17px;
+            vertical-align: middle;
+        }
+        button {
+            @extend .btn;
+            @extend .btn-default;
+            margin-right: 20px;
+            .glyphicon {
+                vertical-align: text-top;
+                padding-right: 5px;
+            }
+        }
+        .btn-group {
+            button {
+                height: 33px;
+                margin-right: 0;
+            }
+        }
+        form {
+            display: inline-block;
+            margin-bottom: 0;
+            .field {
+                margin-bottom: 0;
+            }
+            input {
+                display: inline-block;
+                width: 350px;
+            }
+        }
+    }
+    table.admin-table {
+        @extend .table;
+        tr:nth-child(even) {
+            background: $lightest;
+        }
+        tr {
+            button {
+                opacity: 0;
+                @extend .btn;
+                @extend .btn-xs;
+                @extend .btn-default;
+                &.edit {
+                    @extend .btn-primary;
+                }
+                &.delete {
+                    @extend .btn-danger;
+                }
+                & + button {
+                    margin-left: 10px;
+                }
+                @include transition(all 0.1s linear);
+            }
+            &:hover button {
+                opacity: 1;
+                @include transition(none);
+            }
+        }
+    }
+}

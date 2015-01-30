@@ -1,0 +1,19 @@
+.modal {
+	.modal-dialog {
+		z-index: 1041;
+	}
+	button {
+		@extend .btn;
+
+		&.close-modal {
+			@extend .btn-default;
+		}
+
+		&.save {
+			@extend .btn-primary;
+		}
+		&.confirm-delete {
+			@extend .btn-danger;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Dilemme-bootstrap",
+  "version": "0.0.0",
+  "authors": [
+    "BenjaminBini <benjamin.bini@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "modernizr": "~2.8.3",
+    "bootstrap-sass-official": "~3.3.1",
+    "normalize-scss": "~3.0.1"
+  }
+}

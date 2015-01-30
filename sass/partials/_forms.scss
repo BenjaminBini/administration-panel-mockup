@@ -1,0 +1,8 @@
+form {
+	.field {
+		@extend .form-group;
+		input {
+			@extend .form-control;
+		}
+	}
+}

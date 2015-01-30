@@ -1,0 +1,76 @@
+.nav-panel {
+    width: 220px;
+    height: 100%;
+    margin-left: -225px;
+    display: inline-block;
+    position: fixed;
+    vertical-align: top;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: $dark;
+    color: white;
+    .nav-title {
+        font-size: 16px;
+        padding: 20px;
+        color: white;
+        background: $darker;;
+        margin: 0;
+        font-weight: normal;
+    }
+    ul.main-nav {
+        list-style: none;
+        margin-top: 10px;
+        padding-left: 0;
+        font-size: 14px;
+        li {
+            width: 100%;
+            a {
+                padding: 10px;
+                padding-left: 20px;
+                display: block;
+                color: $medium;
+                text-decoration: none;
+                &:hover {
+                    color: white;
+                    padding-left: 25px;
+                }
+                @include transition(0.2s all ease-in-out);
+                .glyphicon {
+                    padding-right: 5px;
+                }
+            }
+            &.active a {
+                background: $darker;
+                color: white;
+                &:hover {
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+    .user-panel {
+        width: 100%;
+        margin-bottom: -42px;
+        position: absolute;
+        bottom: 0;
+        padding: 20px;
+        background: $darker;
+        text-align: center;
+        overflow: hidden;
+        @include transition(all 0.3s ease);
+        &:hover {
+            margin-bottom: 0;
+        }
+        * + * {
+            margin-top: 10px;
+        }
+        .avatar img.gravatar {
+            @extend .img-circle;
+        }
+        .logout a {
+            @extend .btn;
+            @extend .btn-xs;
+            @extend .btn-danger;
+        }
+    }
+}

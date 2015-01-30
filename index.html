@@ -1,0 +1,248 @@
+<!DOCTYPE html lang="fr">
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="stylesheets/screen.css">
+</head>
+<body>
+	<section class="main-container">
+		<nav class="nav-panel">
+			<h2 class="nav-title">Admin <strong>Dashboard</strong></h2>
+			<ul class="main-nav">
+				<li>
+					<a href="#">
+						<span class="glyphicon glyphicon-search">
+						</span> 
+						Questions
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="glyphicon glyphicon-ok">
+						</span>
+						Responses
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="glyphicon glyphicon-bookmark">
+						</span>
+						Categories
+					</a>
+				</li>
+				<li class="active">
+					<a href="#">
+						<span class="glyphicon glyphicon-user">
+						</span>
+						Users
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="glyphicon glyphicon-lock">
+						</span>
+						Permissions
+					</a>
+				</li>
+			</ul>
+			<section class="user-panel">
+				<div class="avatar">
+					<img class="gravatar" alt="gravatar" src="" />
+				</div>
+				<div class="name">
+					Benjamin Bini
+				</div>
+				<div class="logout">
+					<a href="#" role="button">Log out</a>
+				</div>
+			</section>
+		</nav>
+		<section class="main-panel admin-panel">
+			<header class="panel-title">
+				<h1>User management</h1>
+			</header>
+			<div class="panel-description">
+				<p>
+					Here, you can manage all of your website users, see the details of their accounts, edit or delete them.
+				</p>
+			</div>
+			<div class="admin-controls">
+				<span class="actions-label">
+					Actions
+				</span>
+				<button class="add" data-toggle="modal" data-target="#editUserModal">
+					<span class="glyphicon glyphicon-plus"></span>
+					Add a user
+				</button>
+				<button class="delete-selection" data-toggle="modal" data-target="#deleteUserModal">
+					<span class="glyphicon glyphicon-remove"></span>
+					Delete selected items
+				</button>
+			</div>
+			<div class="admin-controls">
+				<span class="actions-label">
+					Filters
+				</span>
+				<form>
+					<div class="field">
+						<input type="text" placeholder="Type your search here">
+					</div>
+				</form>
+			</div>
+			<table class="admin-table users-table">
+				<thead>
+					<tr>
+						<th clas="check">
+							<input type="checkbox" name="check-all" />
+						</th>
+						<th class="id">
+							#
+						</th>	
+						<th class="name">
+							Name
+						</th>
+						<th class="mail">
+							Mail
+						</th>
+						<th class="registration-date">
+							Registration date
+						</th>
+						<th class="action">
+						</th>
+					</tr>
+				</thead>
+				<tbody class="user">
+					<tr>
+						<td>
+							<input type="checkbox" name="check_user_ID" id="ID" />
+						</td>
+						<td>38</td>
+						<td>Dora Rose</td>
+						<td>et.rutrum.non@Aliquamrutrum.com</td>
+						<td>March 17th, 2014</td>
+						<td>
+							<button class="edit" data-toggle="modal" data-target="#editUserModal">Edit</button>
+							<button class="delete" data-toggle="modal" data-target="#deleteUserModal">Delete</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" name="check_user_ID" id="ID" />
+						</td>
+						<td>38</td>
+						<td>Dora Rose</td>
+						<td>et.rutrum.non@Aliquamrutrum.com</td>
+						<td>March 17th, 2014</td>
+						<td>
+							<button class="edit" data-toggle="modal" data-target="#editUserModal">Edit</button>
+							<button class="delete" data-toggle="modal" data-target="#deleteUserModal">Delete</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" name="check_user_ID" id="ID" />
+						</td>
+						<td>38</td>
+						<td>Dora Rose</td>
+						<td>et.rutrum.non@Aliquamrutrum.com</td>
+						<td>March 17th, 2014</td>
+						<td>
+							<button class="edit" data-toggle="modal" data-target="#editUserModal">Edit</button>
+							<button class="delete" data-toggle="modal" data-target="#deleteUserModal">Delete</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" name="check_user_ID" id="ID" />
+						</td>
+						<td>38</td>
+						<td>Dora Rose</td>
+						<td>et.rutrum.non@Aliquamrutrum.com</td>
+						<td>March 17th, 2014</td>
+						<td>
+							<button class="edit" data-toggle="modal" data-target="#editUserModal">Edit</button>
+							<button class="delete" data-toggle="modal" data-target="#deleteUserModal">Delete</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</section>
+
+	<div class="modal fade" id="editUserModal" tabindex="1" role="dialog" hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">
+							&times;
+						</span>
+						<span class="sr-only">
+							Close
+						</span>
+					</button>
+					<h4 class="modal-title">
+						User's detail
+					</h4>
+				</div>
+				<form class="user-form">
+					<div class="modal-body">
+						<div class="field">
+							<label for="id">ID</label>
+							<input name="id" type="text" disabled value="38"/>
+						</div>
+						<div class="field">
+							<label for="name">Name</label>
+							<input name="name" type="text" value="Dora Rose" placeholder="Type user's name" />
+						</div>
+						<div class="field">
+							<label for="mail">Mail</label>
+							<input name="mail" type="text" value="et.rutrum.non@Aliquamrutrum.com" placeholder="Type user's mail address" />
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="close-modal" data-dismiss="modal">Close</button>
+						<button type="button" class="save">Save</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="deleteUserModal" tabindex="1" role="dialog" hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">
+							&times;
+						</span>
+						<span class="sr-only">
+							Close
+						</span>
+					</button>
+					<h4 class="modal-title">
+						Confirmation
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						Are you sure you want to delete this user ?
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="close-modal" data-dismiss="modal">Close</button>
+					<button type="button" class="confirm-delete">Confirm</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+	<script src="javascripts/proto.js"></script>
+</body>
+</html>

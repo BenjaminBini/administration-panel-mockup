@@ -1,4 +1,9 @@
+# Sass
 .sass-cache
+stylesheets
+
+# bower
+bower_components
 
 # =========================
 # Operating System Files
