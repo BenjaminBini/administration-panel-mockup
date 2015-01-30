@@ -1,4 +1,4 @@
-# Administration Dashboard mockup
+# Administration panel mockup
 
 This is a one page (for now) mockup of what could be the back-office control panel of one of my project. I open source in case of anyone is interested in using and customizing it.
 
@@ -8,7 +8,7 @@ This project use [Compass](http://compass-style.org/) to preprocess CSS and [bow
 
 To compile the CSS and install the dependencies, run the following commands.
 
-```shell
+```bash
 bower install
 compass compile
 ```
